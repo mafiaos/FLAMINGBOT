@@ -19,7 +19,7 @@ class Var(object):
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
     # Send .get_id in any channel to fill this value.
-    COMBINED_GROUP_ID = int(os.environ.get("COMBINED_GROUP_ID", -100))
+    COMBINED_GROUP_ID = os.environ.get("COMBINED_GROUP_ID", -100)
     PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL", f"{COMBINED_GROUP_ID}")
     PRIVATE_GROUP_BOT_API_ID = os.environ.get("PRIVATE_GROUP_BOT_API_ID", f"{COMBINED_GROUP_ID}")
     PM_PERMIT_GROUP_ID = os.environ.get("PM_PERMIT_GROUP_ID", f"{COMBINED_GROUP_ID}")
@@ -30,7 +30,7 @@ class Var(object):
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     AUTH_TOKEN_DATA = os.environ.get("AUTH_TOKEN_DATA", None)
-    MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
+    MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", 3)
     if AUTH_TOKEN_DATA is not None:
         if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
             os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -38,14 +38,14 @@ class Var(object):
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
     PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", f"{COMBINED_GROUP_ID}")
-    if PRIVATE_GROUP_ID is not None:
-        try:
-            PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
-        except ValueError:
-            raise ValueError(
-                "Invalid Private Group ID. Make sure your ID is starts with -100 and make sure that it is only numbers."
-            )
-    NEWS_CHANNEL_ID = int(os.environ.get("NEWS_CHANNEL_ID", -100))
+ 
+  
+       
+     
+         
+          
+            
+    NEWS_CHANNEL_ID = os.environ.get("NEWS_CHANNEL_ID", -100)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     ANTISPAM_SYSTEM = os.environ.get("ANTISPAM_SYSTEM", "DISABLE")
     FLAMING_PRO = os.environ.get("FLAMING_PRO", "YES")

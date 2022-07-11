@@ -1,1 +1,1 @@
-worker: flamingrun.py
+bash FLAMING

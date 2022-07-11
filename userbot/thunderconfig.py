@@ -139,10 +139,10 @@ class Config(object):
     if PRIVATE_GROUP_ID is not None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
-        except ValueError:
-            raise ValueError(
-                "Invalid Private Group ID. Make sure your ID is starts with -100 and make sure that it is only numbers."
-            )
+        except ValueError (e):
+            print(e)
+          
+
 
     PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID", f"{COMBINED_GROUP_ID}")
     if PM_LOGGR_BOT_API_ID:

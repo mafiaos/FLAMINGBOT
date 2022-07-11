@@ -139,7 +139,7 @@ class Config(object):
     if PRIVATE_GROUP_ID is not None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
-        except ValueError (e):
+        except ValueError as (e):
             print(e)
           
 

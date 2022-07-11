@@ -1,4 +1,4 @@
-FROM FLAMING-OS/FLAMINGUSERBOT:latest 
+FROM FLAMING-OS/FLAMINGUSERBOT:slim buster
 # clonning repo 
 RUN git clone https://github.com/FLAMING-OS/FLAMINGUSERBOT.git /root/userbot
 

@@ -65,14 +65,14 @@ class Config(object):
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
     MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "3")
     COMBINED_GROUP_ID = os.environ.get("COMBINED_GROUP_ID",None)
-    PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", f"{COMBINED_GROUP_ID}"))
+    PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL", f"{COMBINED_GROUP_ID}"))
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     MAX_MESSAGE_SIZE_LIMIT = 4095
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     CMD_HNDLR = os.environ.get("CMD_HNDLR", "\.")
     TAG_FEATURE = os.environ.get("TAG_FEATURE", "DISABLE")
-    MAX_SPAM = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
+    MAX_SPAM = os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
     SPOTIFY_USERNAME = os.environ.get("SPOTIFY_USERNAME", None)
     NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(
         os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 10)
@@ -84,7 +84,7 @@ class Config(object):
     SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS", None)
     G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001722877881))
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
-    ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
+    ASSISTANT_LOG = os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
         "UPSTREAM_REPO", "https://github.com/ITS-FLAMINGBOT/FLAMINGBOT"
     )

@@ -791,7 +791,7 @@ def start_assistant(shortname):
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
         sys.modules[
-            "userbot.plugins.assistant" + "Initialising Lightning" + shortname
+            "userbot.plugins.assistant" + "Initialising Flaming" + shortname
         ] = mod
         sedprint.info("Flaming Has imported " + shortname)
 

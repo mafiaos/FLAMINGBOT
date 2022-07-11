@@ -28,6 +28,16 @@ sed = logging.getLogger("WARNING")
 sedprint = logging.getLogger("WARNING")
 CMD_HNDLR = Config.CMD_HNDLR
 
+if Var.STRING_SESSION: 
+    session_name = str(Var.STRING_SESSION)
+    fak = Var.APP_ID fek = Var.API_HASH 
+    bot = TelegramClient(StringSession(session_name), fak, fek)
+   
+else: 
+    session_name = "startup" 
+    fak = Var.APP_ID 
+    fek = Var.API_HASH 
+    bot = TelegramClient(session_name, fak, fek)
 
  
 

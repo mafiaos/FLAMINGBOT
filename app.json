@@ -36,7 +36,7 @@
       "value": "",
       "required": true
      },
-      "LIGHTNING_ALV_IMG": {
+      "FLAMING_ALV_IMG": {
       "description": "To add another Alive pic, Leave blank for default. ",
       "value": "",
       "required": false

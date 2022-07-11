@@ -28,7 +28,7 @@ sed = logging.getLogger("WARNING")
 sedprint = logging.getLogger("WARNING")
 CMD_HNDLR = Config.CMD_HNDLR
 
-Var.STRING_SESSION:
+
     session_name = str(Var.STRING_SESSION)
     fak = Var.APP_ID
     fek = Var.API_HASH

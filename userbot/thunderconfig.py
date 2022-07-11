@@ -64,7 +64,7 @@ class Config(object):
     ENABLE_ASSISTANTBOT = os.environ.get("ENABLE_ASSISTANTBOT", "ENABLE")
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
     MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "3")
-    COMBINED_GROUP_ID = int(os.environ.get("COMBINED_GROUP_ID", -100))
+    COMBINED_GROUP_ID = int(os.environ.get("COMBINED_GROUP_ID",-1001722877881))
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", f"{COMBINED_GROUP_ID}"))
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     MAX_MESSAGE_SIZE_LIMIT = 4095
@@ -82,24 +82,24 @@ class Config(object):
     )
     EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "⨴⨵")
     SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS", None)
-    G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001291663564))
+    G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001722877881))
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/KeinShin/Black-Lightning"
+        "UPSTREAM_REPO", "https://github.com/ITS-FLAMINGBOT/FLAMINGBOT"
     )
     ALIVE_PIC = os.environ.get(
-        "ALIVE_IMAGE", "https://telegra.ph/file/63abc60224dc567e3d441.jpg"
+        "ALIVE_IMAGE", "https://te.legra.ph/file/c1672f2d5ac436575fc3b.mp4"
     )
     CUSTOM_ALIVE_PIC = os.environ.get(
-        "CUSTOM_ALIVE_IMG", "https://telegra.ph/file/50e422f6b07fa9126c1d1.jpg"
+        "CUSTOM_ALIVE_IMG", "https://te.legra.ph/file/c1672f2d5ac436575fc3b.mp4"
     )
     ALIVE_IMAGE = os.environ.get(
-        "ALIVE_PIC", "https://telegra.ph/file/63abc60224dc567e3d441.jpg"
+        "ALIVE_PIC", "https://te.legra.ph/file/2321764bd41e99beab199.jpg"
     )
     ASSISTANT_START_PIC = os.environ.get(
         "ASSISTANT_START_PIC",
-        "https://telegra.ph/file/63abc60224dc567e3d441.jpg",
+        "https://te.legra.ph/file/2321764bd41e99beab199.jpg",
     )
     TESSDATA_PREFIX = os.environ.get(
         "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"

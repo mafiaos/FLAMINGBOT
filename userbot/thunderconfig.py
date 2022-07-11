@@ -136,11 +136,11 @@ class Config(object):
         int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
     )
     PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", f"{COMBINED_GROUP_ID}")
-    if PRIVATE_GROUP_ID is not None:
-        try:
-            PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
-        except ValueError as (e):
-            print(e)
+
+
+          
+        
+      
           
 
 

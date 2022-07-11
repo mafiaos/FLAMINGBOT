@@ -1,1 +1,1 @@
-bash FLAMING
+worker: bash FLAMING

@@ -84,7 +84,7 @@ class Config(object):
     SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS", None)
     G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001722877881))
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
-    ASSISTANT_LOG = os.environ.get("ASSISTANT_LOG", False))
+    ASSISTANT_LOG = os.environ.get("ASSISTANT_LOG", False)
     UPSTREAM_REPO = os.environ.get(
         "UPSTREAM_REPO", "https://github.com/ITS-FLAMINGBOT/FLAMINGBOT"
     )

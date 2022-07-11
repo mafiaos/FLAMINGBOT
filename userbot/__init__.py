@@ -29,12 +29,7 @@ sedprint = logging.getLogger("WARNING")
 CMD_HNDLR = Config.CMD_HNDLR
 
 
-    session_name = str(Var.STRING_SESSION)
-    except IndentationError as e:
-    print e
-    fak = Var.APP_ID
-    fek = Var.API_HASH
-    bot = TelegramClient(StringSession(session_name), fak, fek)
+ 
 
 
 

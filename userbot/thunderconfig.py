@@ -8,7 +8,7 @@ ENV = bool(os.environ.get("ENV", False))
 class Config(object):
     APP_ID = int(os.environ.get("APP_ID", 6))
     # 6 is a placeholder
-    API_HASH = os.environ.get("API_HASH", None)
+    API_HASH = os.environ.get("API_HASH", "3b5e73f63810334a1d730087b552519b")
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/")

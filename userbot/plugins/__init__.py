@@ -1,6 +1,6 @@
 from userbot import topfunc
 from userbot.thunderconfig import Config
-from userbot.utils import lightning_cmd
+from userbot.utils import flaming_cmd
 from var import Var
 
 idgen = topfunc.id_generator
@@ -63,11 +63,11 @@ else:
     BOTLOG = True
     BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 if Var.FLAMING_PRO.lower() == "NO":
-    light_pr = "NO"
+    flaming_pr = "NO"
 else:
     flaming_pr = "YES"
 
-lightning_status = (
+flaming_status = (
     f"Sorry Sir In Some Plugin There Is A Telegram Bug\n"
     f"Pls Try To Understand\n"
     f"Instead Do .help <cmd name>\n\n"

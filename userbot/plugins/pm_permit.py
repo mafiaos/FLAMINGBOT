@@ -207,11 +207,11 @@ if Var.PRIVATE_GROUP_ID is not None:
             if chat_ids in FLAMING_REVL_MSG:
                 await FLAMING_REVL_MSG[chat_ids].delete()
             FLAMING_REVL_MSG[chat_ids] = lemme
-            lightn_msg = ""
-            lightn_msg += "#Some Retards 😑\n\n"
-            lightn_msg += f"[User](tg://user?id={chat_ids}): {chat_ids}\n"
-            lightn_msg += f"Message Counts: {FLAMING_WRN[chat_ids]}\n"
-            # lightn_msg += f"Media: {message_media}"
+            flaming_msg = ""
+            flaming_msg += "#Some Retards 😑\n\n"
+            flaming_msg += f"[User](tg://user?id={chat_ids}): {chat_ids}\n"
+            flaming_msg += f"Message Counts: {FLAMING_WRN[chat_ids]}\n"
+            # flaming_msg += f"Media: {message_media}"
             try:
                 await flaming.client.send_message(
                     entity=Var.PRIVATE_GROUP_ID,

@@ -6,9 +6,9 @@ from userbot import ALIVE_NAME, TG_CHANNEL, TG_GRUP
 from userbot.thunderconfig import Config
 from userbot.utils import flaming_cmd
 
-LIGHTNING_ALV_IMG = os.environ.get("LIGHTNING_ALV_IMG", None)
-if not LIGHTNING_ALV_IMG:
-    LIGHTNING_ALV_IMG = "https://te.legra.ph/file/c1672f2d5ac436575fc3b.mp4"
+FLAMING_ALV_IMG = os.environ.get("FLAMING_ALV_IMG", None)
+if not FLAMING_ALV_IMG:
+    FLAMING_ALV_IMG = "https://te.legra.ph/file/c1672f2d5ac436575fc3b.mp4"
 
 
 
@@ -64,5 +64,5 @@ pm_caption += "[┏┓━┏┓━━━━┏┓━┏┓━━━━━\n┃�
 async def flaming(alive):
     await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
-    await borg.send_file(alive.chat_id, file=LIGHTNING_ALV_IMG, caption=pm_caption, link_preview=False)
+    await borg.send_file(alive.chat_id, file=FLAMING_ALV_IMG, caption=pm_caption, link_preview=False)
     await alive.delete()

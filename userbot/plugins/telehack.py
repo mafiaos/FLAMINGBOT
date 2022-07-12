@@ -4,7 +4,7 @@ import random
 from userbot.utils import flaming_cmd
 
 
-@borg.on(flaming_cmd(pattern="tahack ?(.*)"))
+@borg.on(flaming_cmd(pattern="hack ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
